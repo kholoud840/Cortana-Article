@@ -1,0 +1,12 @@
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between; }
+    header .nav-item {
+      display: inline-block;
+      margin-right: 20px; }
+    header .nav-item a {
+      color: #999;
+      padding: 10px; } }
+
+/*# sourceMappingURL=hero-section.css.map */

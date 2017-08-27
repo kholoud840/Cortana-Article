@@ -1,0 +1,51 @@
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.small-content {
+  @extend .content;
+  width: 680px;
+}
+
+.large-content {
+  @extend .content;
+  width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  fill: #767676;
+}
+
+p {
+  margin: 0;
+}

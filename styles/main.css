@@ -1,0 +1,134 @@
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+h1, h2, h3 {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+.content, .small-content, .large-content {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.small-content {
+  width: 680px; }
+
+.large-content {
+  width: 1200px; }
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  fill: #767676; }
+
+p {
+  margin: 0; }
+
+header .logo {
+  display: inline-block;
+  margin-bottom: 20px; }
+header svg {
+  fill: #d65421; }
+header .navigation {
+  background: #fff;
+  display: none; }
+header .nav-item {
+  border-bottom: 1px solid #eee;
+  padding: 6px 0; }
+header .nav-item a {
+  display: inline-block;
+  color: #555;
+  padding: 10px;
+  font-size: 0.8em;
+  text-transform: capitalize;
+  font-weight: 700;
+  width: 100%; }
+
+.hero-section {
+  background: url("../image/2016-03-23_post-img_4537_miyajima-shrine.jpg");
+  min-height: 300px;
+  background-size: cover; }
+  .hero-section .article-title {
+    font-size: 2em;
+    font-weight: 300;
+    color: #555;
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: 0 0 2px #ededed;
+    margin-bottom: 12px; }
+  .hero-section .by-line {
+    color: #575656;
+    text-align: center;
+    font-size: 0.8em;
+    font-style: italic; }
+  .hero-section .by-line .name {
+    border-right: 1px solid #9d9d9d;
+    padding-right: 4px; }
+
+@media (min-width: 600px) {
+  .hero-section {
+    min-height: 500px; }
+    .hero-section .article-title {
+      font-size: 2.6em;
+      margin-top: 0; }
+
+  header {
+    padding: 20px 0;
+    text-align: initial;
+    /*.navigation:last-child{
+      margin-right: 0;
+    }*/ }
+    header .logo {
+      margin-bottom: 0; }
+    header .large-content {
+      display: flex;
+      justify-content: space-between; }
+    header .nav-item {
+      display: inline-block;
+      margin-right: 20px;
+      margin-bottom: 0;
+      border-bottom: none; }
+    header .navigation {
+      margin-right: -20px;
+      background: none;
+      display: block; }
+    header .nav-item a:hover {
+      color: #d65421; } }
+.article-body {
+  position: relative; }
+  .article-body p {
+    line-height: 32px;
+    color: #555;
+    padding: 50px 0; }
+  .article-body p:first-child:first-letter {
+    color: #d65421;
+    float: left;
+    font-size: 76px;
+    line-height: 60px;
+    padding-right: 8px; }
+
+.article-body::before {
+  content: "";
+  height: 100px;
+  width: 100%;
+  background: url(../image/brush.png);
+  position: absolute;
+  background-size: contain;
+  top: -46px;
+  left: 0; }
+
+/*# sourceMappingURL=main.css.map */
