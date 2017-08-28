@@ -1,6 +1,6 @@
 
 .article-body {
-  position: relative;
+
   p {
     line-height: 32px;
     color: $secondary-color;
@@ -16,13 +16,3 @@
   }
 }
 
-.article-body::before {
-  content: "";
-  height: 100px;
-  width: 100%;
-  background: url(../image/brush.png);
-  position: absolute;
-  background-size: contain;
-  top: -46px;
-  left: 0;
-}

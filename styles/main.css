@@ -38,30 +38,33 @@ svg {
 p {
   margin: 0; }
 
-header .logo {
-  display: inline-block;
-  margin-bottom: 20px; }
-header svg {
-  fill: #d65421; }
-header .navigation {
-  background: #fff;
-  display: none; }
-header .nav-item {
-  border-bottom: 1px solid #eee;
-  padding: 6px 0; }
-header .nav-item a {
-  display: inline-block;
-  color: #555;
-  padding: 10px;
-  font-size: 0.8em;
-  text-transform: capitalize;
-  font-weight: 700;
-  width: 100%; }
+header {
+  padding: 20px 0; }
+  header .logo {
+    display: inline-block;
+    margin-bottom: 20px; }
+  header svg {
+    fill: #d65421; }
+  header .navigation {
+    background: #fff;
+    display: none; }
+  header .nav-item {
+    border-bottom: 1px solid #eee;
+    padding: 6px 0; }
+  header .nav-item a {
+    display: inline-block;
+    color: #555;
+    padding: 10px;
+    font-size: 0.8em;
+    text-transform: capitalize;
+    font-weight: 700;
+    width: 100%; }
 
 .hero-section {
   background: url("../image/2016-03-23_post-img_4537_miyajima-shrine.jpg");
   min-height: 300px;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   .hero-section .article-title {
     font-size: 2em;
     font-weight: 300;
@@ -74,61 +77,62 @@ header .nav-item a {
     color: #575656;
     text-align: center;
     font-size: 0.8em;
-    font-style: italic; }
+    font-style: italic;
+    text-shadow: 0 0 1px #ededed; }
   .hero-section .by-line .name {
     border-right: 1px solid #9d9d9d;
     padding-right: 4px; }
 
-@media (min-width: 600px) {
-  .hero-section {
-    min-height: 500px; }
-    .hero-section .article-title {
-      font-size: 2.6em;
-      margin-top: 0; }
-
-  header {
-    padding: 20px 0;
-    text-align: initial;
-    /*.navigation:last-child{
-      margin-right: 0;
-    }*/ }
-    header .logo {
-      margin-bottom: 0; }
-    header .large-content {
-      display: flex;
-      justify-content: space-between; }
-    header .nav-item {
-      display: inline-block;
-      margin-right: 20px;
-      margin-bottom: 0;
-      border-bottom: none; }
-    header .navigation {
-      margin-right: -20px;
-      background: none;
-      display: block; }
-    header .nav-item a:hover {
-      color: #d65421; } }
-.article-body {
-  position: relative; }
-  .article-body p {
-    line-height: 32px;
-    color: #555;
-    padding: 50px 0; }
-  .article-body p:first-child:first-letter {
-    color: #d65421;
-    float: left;
-    font-size: 76px;
-    line-height: 60px;
-    padding-right: 8px; }
-
-.article-body::before {
+.hero-section::after {
   content: "";
-  height: 100px;
+  height: 50px;
   width: 100%;
   background: url(../image/brush.png);
   position: absolute;
   background-size: contain;
-  top: -46px;
-  left: 0; }
+  background-repeat: repeat-x;
+  left: 0;
+  bottom: -32px; }
+
+@media (min-width: 700px) {
+  .hero-section {
+    min-height: 350px; }
+    .hero-section .article-title {
+      font-size: 2.6em;
+      margin-top: 40px; }
+
+  header .logo {
+    margin-bottom: 0; }
+  header .large-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  header .nav-item {
+    display: inline-block;
+    margin-right: 16px;
+    margin-bottom: 0;
+    border-bottom: none; }
+  header .navigation {
+    margin-right: -20px;
+    background: none;
+    display: block; }
+  header .nav-item a:hover {
+    color: #d65421; } }
+@media (min-width: 1000px) {
+  .hero-section {
+    min-height: 500px; }
+
+  .article-title {
+    margin-top: 0; } }
+.article-body p {
+  line-height: 32px;
+  color: #555;
+  padding: 50px 0; }
+.article-body p:first-child:first-letter {
+  color: #d65421;
+  float: left;
+  font-size: 76px;
+  line-height: 60px;
+  padding-right: 8px; }
 
 /*# sourceMappingURL=main.css.map */
