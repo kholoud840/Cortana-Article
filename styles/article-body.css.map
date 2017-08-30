@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEE,eAAC;EACC,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,IAAI",
-"sources": ["article-body.scss"],
-"names": [],
-"file": "article-body.css"
-}
